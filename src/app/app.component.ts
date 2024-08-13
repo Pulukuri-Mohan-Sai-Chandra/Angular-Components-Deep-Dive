@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import { DashboardItemComponent } from "./dashboard-item/dashboard-item.component";
+import { HeaderComponent } from "../header/header.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
+  imports: [DashboardItemComponent, HeaderComponent],
 })
 export class AppComponent {
   dummyTrafficData = [
