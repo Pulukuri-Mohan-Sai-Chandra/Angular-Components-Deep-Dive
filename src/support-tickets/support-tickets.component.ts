@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { NewTicketComponent } from "../new-ticket/new-ticket.component";
 
 @Component({
@@ -6,7 +6,7 @@ import { NewTicketComponent } from "../new-ticket/new-ticket.component";
   standalone: true,
   imports: [NewTicketComponent],
   templateUrl: './support-tickets.component.html',
-  styleUrl: './support-tickets.component.css'
+  styleUrl: './support-tickets.component.css',
 })
 export class SupportTicketsComponent {
 
