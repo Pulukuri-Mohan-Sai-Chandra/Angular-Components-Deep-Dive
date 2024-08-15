@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, inject } from '@angular/core';
 import { ComInputComponent } from "../com-input/com-input.component";
 import { AppButtonComponent } from '../app-button/app-button.component';
 
@@ -7,8 +7,8 @@ import { AppButtonComponent } from '../app-button/app-button.component';
   standalone: true,
   imports: [ComInputComponent,AppButtonComponent],
   templateUrl: './new-ticket.component.html',
-  styleUrl: './new-ticket.component.css'
+  styleUrl: './new-ticket.component.css',
 })
-export class NewTicketComponent {
+export class NewTicketComponent { 
 
 }

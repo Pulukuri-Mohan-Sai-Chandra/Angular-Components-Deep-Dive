@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './server-status.component.css'
 })
 export class ServerStatusComponent {
-  currentStatus = 'online'
+  currentStatus = 'offline'
+
+  get statusClass(){
+    return (this.currentStatus === 'online')?"status-online":(this.currentStatus === 'offline')?"status-offline":"status-unknown"
+  }
 }

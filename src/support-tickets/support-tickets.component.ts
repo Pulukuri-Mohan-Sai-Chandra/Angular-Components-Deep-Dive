@@ -9,5 +9,4 @@ import { NewTicketComponent } from "../new-ticket/new-ticket.component";
   styleUrl: './support-tickets.component.css',
 })
 export class SupportTicketsComponent {
-
 }
