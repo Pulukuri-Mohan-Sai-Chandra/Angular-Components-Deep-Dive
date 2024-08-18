@@ -1,0 +1,10 @@
+<ul>
+  @for(ticket of tickets;track ticket.id){
+  <li>
+    <app-ticket [currentTicket]="ticket" (ticketUpdated)="ticketUpdated($event)"  (reopenTicket)="reOpenTicket($event)"/>
+  </li>
+  }@empty {
+  <p>No Tickets Available...</p>
+  }
+</ul>
+<app-new-ticket (newTicket)="onNewTicket($event)" />

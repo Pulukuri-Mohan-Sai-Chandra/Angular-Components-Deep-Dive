@@ -1,9 +1,9 @@
-<form>
-    <com-input title="Title">
-      <input  ngProjectAs="title" id="title" name="title"><input/>
+<form (ngSubmit)="onSubmit()" #form>
+    <com-input title="Title" >
+      <input id="title" name="title" #titleInput />
     </com-input>
     <com-input title="Request">
-      <textarea ngProjectAs="textarea" rows="3" id="request" name="request"></textarea>
+      <textarea  rows="3" id="request" name="request" #requestInput></textarea>
     </com-input>
   <p>
     <button appButton>

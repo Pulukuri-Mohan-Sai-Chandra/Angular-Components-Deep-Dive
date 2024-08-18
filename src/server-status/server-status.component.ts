@@ -13,7 +13,7 @@ export class ServerStatusComponent implements OnInit{
   currentStatus = 'online'
   ngOnInit(){
     setInterval(() => {
-      this.currentStatus = status[index % 3];
+      this.currentStatus = status[Math.round(Math.random() * 2)];
       index++;
     }, 8000)
   }
